@@ -2,130 +2,57 @@ import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { AiOutlineRight } from "react-icons/ai";
 
-import hotAugustBook from "../assets/hotAugustBook.jpeg";
+import whoReallyDrivingYourBusBook from "../assets/whoReallyDrivingYourBusBook.jpg";
 import safetyBook from "../assets/safetyBook.jpeg";
 import prettyPleaseBook from "../assets/prettyPleaseBook.jpeg";
 import paulCollectionImages from "../assets/paulCollectionImages.jpg";
 import amazonCom from "../assets/amazonCom.png";
-
 function Landing() {
   return (
     <>
-      <div className="landingDiv md:mt-[88px] mt-[82px] bg-[url('https://media.architecturaldigest.com/photos/58dbe50c78266a4438076739/4:3/w_4212,h_3159,c_limit/Secrets%20from%20Baseball%20Stadiums%201.jpg')] bg-no-repeat bg-cover bg-bottom flex">
-        <div className="m-auto !w-[80%] ">
-          <div className="flex flex-wrap justify-center space lg:space-y-0 space-y-8">
-            <div className="mx-auto max-w-[450px] ">
-              <div className="">
-                <div className="text-left text-white font-bold md:text-4xl text-2xl p-4">
-                  <span className=" backdrop-blur-3xl bg-black/20">
-                    Big Train's Backyard
-                  </span>
-                </div>
-
-                <img
-                  className="max-w-[400px] md:w-auto w-[300px] ml-4"
-                  src={hotAugustBook}
-                  alt=""
-                />
-
-                <div className=" text-white ">
-                  <div className="rounded-lg md:text-xl text-sm px-5 md:py-2.5 py-3.5 mx-auto">
-                    <div className=" backdrop-blur-3xl bg-black/20 p-4 rounded-lg">
-                      A Great Baseball Story - "Big Train's Backyard" transports
-                      you to a hot July pennant race where veteran former
-                      all-star 3rd baseman ...
-                    </div>
-                    <div className=" bg-white shadow-lg shadow-black/80 max-w-[250px] lg:w-auto w-[180px] my-2 p-2 rounded-xl hover:bg-[#FF9900] ">
-                      <div className="text-xs font-semibold text-black">
-                        BUY "Big Train's Backyard"
-                      </div>
-                      <a
-                        href="https://www.amazon.com/Big-Trains-Backyard-Edmund-Fischetti-ebook/dp/B00CHVBARM?ref_=ast_sto_dp"
-                        target="_blank"
-                        class="outline-none text-white font-medium text-md "
-                        rel="noreferrer"
-                      >
-                        <img className="pt-2 " src={amazonCom} alt="" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+      <div className="landingDiv bg-[url('https://cairforyou.com/assets/images/mbr-1920x1081.jpg')] bg-no-repeat bg-cover bg-bottom ">
+        <div className="flex h-screen relative">
+          <div className="w-[60%] h-[100%] flex text-white">
+            <div className="m-auto w-[80%] space-y-8">
+              <div className="text-7xl font-bold backdrop-blur-sm ">
+                James O. Henman
+              </div>
+              <div className="text-2xl font-semibold backdrop-blur-sm">
+                You can learn to recognize who is really driving your emotional
+                bus in the most difficult "traffic" areas of your life.
               </div>
             </div>
-            <div className="mx-auto max-w-[450px] ">
-              <div className=" ">
-                <div className="text-left text-white font-bold md:text-4xl text-2xl p-4">
-                  <span className="  backdrop-blur-3xl bg-black/20">
-                    {" "}
-                    THE SAFETY BOOK
-                  </span>
-                </div>
-
-                <img
-                  className="max-w-[400px] md:w-auto w-[300px] ml-4"
-                  src={safetyBook}
-                  alt=""
-                />
-
-                <div className=" text-white ">
-                  <div className="rounded-lg md:text-xl text-sm px-5 md:py-2.5 py-3.5 mx-auto">
-                    <div className=" backdrop-blur-3xl bg-black/20 p-4 rounded-lg">
-                      The murder of Washington All-Pro Safety Sean Taylor in
-                      2007 devastates Guy Finelli at the age of thirteen,
-                      dreaming to become a football athlete like Taylor.
-                    </div>
-                    <div className=" bg-white shadow-lg shadow-black/80 max-w-[250px] lg:w-auto w-[180px] my-2 p-2 rounded-xl hover:bg-[#FF9900]">
-                      <div className="text-xs font-semibold text-black">
-                        BUY "THE SAFETY BOOK"
-                      </div>
-                      <a
-                        href="https://www.amazon.com/Safety-P-Fischetti-ebook/dp/B010QZ12OQ?ref_=ast_sto_dp"
-                        target="_blank"
-                        class="outline-none text-white font-medium text-md "
-                        rel="noreferrer"
-                      >
-                        <img className="pt-2 " src={amazonCom} alt="" />
-                      </a>
-                    </div>
+          </div>
+          <div className="w-[40%] h-[100%]">
+            <div className="bg-[#3D8EAB] w-[40%] h-[65%] absolute bottom-0 flex justify-center text-white">
+              <div className="my-auto">
+                <div className="flex justify-center">
+                  <div className="w-[40%]">
+                    <img
+                      className="max-w-[75%]"
+                      src={whoReallyDrivingYourBusBook}
+                      alt=""
+                    />
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="mx-auto max-w-[450px] ">
-              <div className="">
-                <div className="text-left text-white font-bold md:text-4xl text-2xl p-4">
-                  <span className=" backdrop-blur-3xl bg-black/20">
-                    {" "}
-                    MISS PRETTY PLEASE
-                  </span>
-                </div>
-
-                <img
-                  className="max-w-[400px] md:w-auto w-[300px] ml-4"
-                  src={prettyPleaseBook}
-                  alt=""
-                />
-
-                <div className=" text-white ">
-                  <div className="rounded-lg md:text-xl text-sm px-5 md:py-2.5 py-3.5 mx-auto">
-                    <div className=" backdrop-blur-3xl bg-black/20 p-4 rounded-lg">
-                      While celebrating her fifteenth birthday, Annie Finelli, a
-                      girl ahead of her age in smarts, talent, and maturity,
-                      again meets Russell ...
+                  <div className="w-[40%] my-auto space-y-4">
+                    <div className="text-2xl font-bold">
+                      Who's Really Driving Your Bus
                     </div>
-                    <div className=" bg-white shadow-lg shadow-black/80 max-w-[250px] lg:w-auto w-[180px] my-2 p-2 rounded-xl hover:bg-[#FF9900]">
-                      <div className="text-xs font-semibold text-black">
-                        BUY "PRETTY PLEASE"
-                      </div>
-                      <a
-                        href="https://www.amazon.com/Miss-Pretty-Please-P-Fischetti/dp/1646106717"
-                        target="_blank"
-                        class="outline-none text-white font-medium text-md "
-                        rel="noreferrer"
-                      >
-                        <img className="pt-2 " src={amazonCom} alt="" />
-                      </a>
+                    <div>by James O. Henman</div>
+                    <div>
+                      You can learn to recognize who is really driving your
+                      emotional bus in the most difficult "traffic" areas of
+                      your life. Dr. Henman invites you to sit across from him
+                      as if you were actually in a Therapeutic Coaching session.{" "}
                     </div>
+                    <a
+                      target="_blank"
+                      href="https://www.amazon.com/Big-Trains-Backyard-Edmund-Fischetti-ebook/dp/B00CHVBARM?ref_=ast_sto_dp"
+                      class="inline-flex text-white bg-[#FF9900] border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg font-semibold"
+                      rel="noreferrer"
+                    >
+                      Buy on Amazon
+                    </a>
                   </div>
                 </div>
               </div>
@@ -133,8 +60,8 @@ function Landing() {
           </div>
         </div>
       </div>
-
-      <div className=" bg-black ">
+      <div className="h-screen bg-[#3D8EAB]"></div>
+      {/* <div className=" bg-black ">
         <div className="text-white w-[90%] mx-auto pt-[80px] gridLandingDivParent ">
           <div className="gridLandingDiv m-auto grid grid-cols-3 space-x-8 ">
             <div className=" md:min-w-[45%] flex collectionDiv mx-auto">
@@ -258,7 +185,7 @@ function Landing() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

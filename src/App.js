@@ -18,11 +18,11 @@ function App() {
           <Routes>
             {/* <Route path="/" element={<Layout />}> */}
             <Route index element={<Landing />} />
-            <Route path="author" element={<Author />} />
+            {/* <Route path="author" element={<Author />} />
             <Route path="book" element={<Book />} />
             <Route path="reviews" element={<Reviews />} />
             <Route path="order" element={<Order />} />
-            <Route path="contact" element={<ContactUs />} />
+            <Route path="contact" element={<ContactUs />} /> */}
             {/* </Route> */}
           </Routes>
         </Layout>

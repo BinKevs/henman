@@ -1,24 +1,35 @@
 import { Outlet, Link } from "react-router-dom";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NavBar = () => {
   const [hamBurgetState, setHamBurgetState] = useState(false);
   const [aboutState, setAboutState] = useState(false);
-
+  const [colorBgNav, setColorBgNav] = useState(false);
+  const listenScrollEvent = (e) => {
+    if (window.scrollY > 200) {
+      setColorBgNav(true);
+    } else {
+      setColorBgNav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  });
   return (
     <>
       {" "}
       <nav
-        className="bg-black px-4 sm:px-8 py-4 fixed top-0 w-full z-50"
+        className={`px-4 sm:px-8 py-4 fixed top-0 w-full z-50 font-Montserrat ${
+          colorBgNav ? "bg-black text-white" : "bg-transparent"
+        }`}
         id="navbar"
       >
         <div className=" flex flex-wrap justify-between items-center mx-auto">
           <Link to="author" className="flex items-center">
-            <span className="md:text-3xl text-xl font-semibold whitespace-nowrap font-Montserrat text-white border-2 border-white py-4 pr-4">
-              <span className="bg-white text-black p-2"> Paul Edmund </span>{" "}
-              Fischetti
+            <span className="md:text-3xl text-xl font-semibold whitespace-nowrap py-4 pr-4">
+              <span className=" p-2"> James O. </span> Henman
             </span>
           </Link>
 
@@ -45,7 +56,7 @@ const NavBar = () => {
             className="navLink navLinkDiv  w-full  md:w-auto"
             id="navbar-default"
           >
-            <ul className="flex  p-4 text-[#C8C7D8] space-x-12 mt-0 lg:mr-8 mr-4 text-md font-medium ">
+            <ul className="flex  p-4  space-x-12 mt-0 lg:mr-8 mr-4 text-xl font-medium ">
               <li>
                 <Link
                   to="/"
