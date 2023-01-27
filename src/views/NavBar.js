@@ -2,8 +2,9 @@ import { Outlet, Link } from "react-router-dom";
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useHistory, useLocation } from "react-router-dom";
 const NavBar = () => {
+  const location = useLocation();
   const [hamBurgetState, setHamBurgetState] = useState(false);
   const [aboutState, setAboutState] = useState(false);
   const [colorBgNav, setColorBgNav] = useState(false);
@@ -22,13 +23,17 @@ const NavBar = () => {
       {" "}
       <nav
         className={`px-4 sm:px-8 py-4 fixed top-0 w-full z-50 font-Montserrat ${
-          colorBgNav ? "bg-black text-white" : "bg-transparent"
+          location.pathname === "/"
+            ? colorBgNav
+              ? "bg-white text-black"
+              : "bg-transparent  text-white"
+            : "bg-white text-black"
         }`}
         id="navbar"
       >
         <div className=" flex flex-wrap justify-between items-center mx-auto">
           <Link to="author" className="flex items-center">
-            <span className="md:text-3xl text-xl font-semibold whitespace-nowrap py-4 pr-4">
+            <span className="md:text-5xl text-xl font-bold whitespace-nowrap text-black py-4 pr-4">
               <span className=" p-2"> James O. </span> Henman
             </span>
           </Link>
