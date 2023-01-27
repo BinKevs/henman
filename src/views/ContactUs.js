@@ -5,79 +5,83 @@ import { BiCurrentLocation } from "react-icons/bi";
 function ContactUs() {
   return (
     <>
-      <div className="bg-black md:mt-[88px] mt-[82px]">
-        <div class="container  px-6  mx-auto">
-          <section class=" text-gray-800 text-center">
-            <div class="px-6 py-12 md:px-12 ">
-              <div class="container mx-auto xl:px-32 border-2">
-                <div class="grid lg:grid-cols-2 flex items-center">
-                  <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0 ">
-                    <div class="block rounded-lg shadow-lg  py-12 px-12 p-8 border-2 mr-4 border-black bg-white">
-                      <h2 class="text-3xl font-bold mb-12">Contact us</h2>
-                      <form>
-                        <div class="form-group mb-6">
-                          <input
-                            type="text"
-                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                            id="exampleInput7"
-                            placeholder="Name"
-                          />
-                        </div>
-                        <div class="form-group mb-6">
-                          <input
-                            type="email"
-                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                            id="exampleInput8"
-                            placeholder="Email address"
-                          />
-                        </div>
-                        <div class="form-group mb-6">
-                          <textarea
-                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                            id="exampleFormControlTextarea13"
-                            rows="3"
-                            placeholder="Message"
-                          ></textarea>
-                        </div>
-                        <div class="form-group form-check text-center mb-6">
-                          <input
-                            type="checkbox"
-                            class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                            id="exampleCheck87"
-                            checked
-                          />
-                          <label
-                            class="form-check-label inline-block text-gray-800"
-                            for="exampleCheck87"
-                          >
-                            Send me a copy of this message
-                          </label>
-                        </div>
-                        <button
-                          type="submit"
-                          class="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                        >
-                          Send
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="md:mb-12 lg:mb-0 p-8 border-2 border-black shadow-lg rounded-lg">
-                    <div class="h-[700px] relative shadow-lg rounded-lg ">
-                      <iframe
-                        src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        class="left-0 top-0 h-full w-full absolute rounded-lg"
-                        frameborder="0"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section class="bg-white dark:bg-gray-900 mt-[88px]">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2 class="mb-4 text-7xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+            Contact <span className="text-[#3D8FAA]">Us</span>
+          </h2>
+          <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+            For any inquries Let us know.
+          </p>
+          <form action="#" class="space-y-8">
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Juan Dela Cruz"
+                required
+              />
             </div>
-          </section>
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Your email
+              </label>
+              <input
+                type="email"
+                id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Example@gmail.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Subject
+              </label>
+              <input
+                type="text"
+                id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Let us know how we can help you"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              >
+                Your message
+              </label>
+              <textarea
+                id="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Leave a comment..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            >
+              Send message
+            </button>
+          </form>
         </div>
-      </div>
+      </section>
     </>
   );
 }
