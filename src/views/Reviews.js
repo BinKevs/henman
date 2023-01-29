@@ -65,14 +65,14 @@ function Reviews() {
                 <div className="text-9xl font-bold text-black text-center font-serif">
                   ''
                 </div>
-                <div className="pb-8 text-black text-6xl font-semibold">
+                <div className="pb-8 text-black md:text-6xl text-3xl font-semibold">
                   Experience Rather Than an Intellectual Exercise
                 </div>
                 {/* <div className="py-4 text-gray-400 text-xl font-semibold">
                   Silver Spring, MD – WEBWIRE – Friday, December 9, 2022
                 </div> */}
-                <div className="flex">
-                  <div className="text-black text-md text-justify w-[40%] m-auto">
+                <div className="flex md:flex-row flex-col">
+                  <div className="text-black text-md text-justify md:w-[40%] w-[90%] m-auto">
                     Dr. Henman began his professional career working in Head
                     Start and Migrant Education preschool programs in central
                     California in 1968. He has spent the last 30 years in full
@@ -95,7 +95,7 @@ function Reviews() {
                     Cognitive/Perceptual tools from the CAIR Handbook to allow a
                     safe place to experience God's Grace in recovery.
                   </div>
-                  <div className="w-[40%] m-auto bg-[#3D8FAA] rounded-bl-[780px]">
+                  <div className="md:w-[40%] m-auto bg-[#3D8FAA] rounded-bl-[780px]">
                     {" "}
                     <img
                       className="w-[70%] mx-auto py-[10%]"

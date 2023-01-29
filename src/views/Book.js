@@ -10,15 +10,15 @@ function Book() {
   const [thirdBookHidden, setThirdBook] = useState(false);
   return (
     <>
-      <section class="text-white body-font bg-white h-screen flex">
+      <section class="text-white body-font bg-white md:h-screen flex">
         <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center w-[80%]">
-          <div class="text-black lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col mb-16 md:mb-0 items-center text-center">
-            <h1 class="sm:text-4xl text-5xl mb-4 font-bold ">
+          <div class="text-black lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col mb-16 md:mb-0 items-center text-center md:order-first order-last md:mt-0 mt-[32px]">
+            <h1 class="md:text-4xl text-3xl mb-4 font-bold text-[#3D8FAA]">
               {" "}
               Who's Really Driving Your Bus
             </h1>
             <p
-              className={`mb-8 leading-relaxed border-t-[4px] border-black pt-2`}
+              className={`mb-8 leading-relaxed border-t-[4px] border-[#3D8FAA] pt-2`}
             >
               Who has REALLY been driving your emotional bus during the most
               stressful times of your life? Dr. Henman helps you gain the skills
@@ -38,9 +38,9 @@ function Book() {
               </a>
             </div>
           </div>
-          <div class="bg-gradient-to-r from-[#FFFEFE] to-[#3D8FAA] w-[50%] py-[5%] rounded-bl-[80px]">
+          <div class="bg-gradient-to-r from-[#FFFEFE] to-[#3D8FAA] md:w-[50%] w-[90%] py-[5%] rounded-bl-[80px]">
             <img
-              class="object-cover object-center rounded ml-auto rounded-bl-[80px] mx-auto"
+              class="object-cover object-center rounded md:ml-auto rounded-bl-[80px] md:w-auto w-[60%] mx-auto"
               alt="hero"
               src="https://m.media-amazon.com/images/I/51xzUpaHZUL._SX331_BO1,204,203,200_.jpg"
             />

@@ -15,12 +15,12 @@ function Landing() {
         className={`landingDiv bg-[url(assets/yellowSchoolBusToyModel.jpeg)] bg-no-repeat bg-cover bg-left-bottom`}
       >
         <div className="flex md:flex-row flex-col md:h-screen relative">
-          <div className="md:w-[60%] w-[80%] md:mx-0 mx-auto md:h-[100%] h-screen flex md:text-white">
-            <div className="m-auto w-[80%] space-y-8">
-              <div className="text-7xl font-bold backdrop-blur-sm ">
+          <div className="md:w-[60%] w-[80%] md:mx-0 mx-auto md:h-[100%] h-screen flex md:text-[#E6EFF3]">
+            <div className="m-auto w-[80%] space-y-8 ">
+              <div className="md:text-7xl text-4xl font-bold ">
                 James O. Henman
               </div>
-              <div className="text-2xl font-semibold backdrop-blur-sm">
+              <div className="text-2xl font-semibold ">
                 You can learn to recognize who is really driving your emotional
                 bus in the most difficult "traffic" areas of your life.
               </div>
@@ -30,14 +30,14 @@ function Landing() {
             <div className="bg-[#FFFEFE] mx-auto md:w-[40%] w-[80%] h-[65%] md:absolute bottom-0 flex justify-center text-black">
               <div className="my-auto">
                 <div className="flex lg:flex-row flex-col justify-center">
-                  <div className="md:w-[40%] w-[80%] md:mx-0 mx-auto flex">
+                  <div className="lg:w-[40%] w-[80%] lg:mx-0 mx-auto flex">
                     <img
-                      className="max-w-[75%] min-w-[120px] mx-auto md:my-auto my-[8%]"
+                      className="max-w-[75%] min-w-[120px] mx-auto lg:my-auto my-[8%]"
                       src={whoReallyDrivingYourBusBook}
                       alt=""
                     />
                   </div>
-                  <div className="md:w-[40%] w-[80%] md:mx-0 mx-auto my-auto space-y-4 md:text-left text-center">
+                  <div className="lg:w-[40%] w-[80%] lg:mx-0 mx-auto my-auto space-y-4 lg:text-left text-center">
                     <div className="text-2xl font-bold">
                       Who's Really Driving Your Bus
                     </div>
@@ -70,7 +70,7 @@ function Landing() {
               {/* <div className="text-6xl font-semibold">
                 More About James Henman
               </div> */}
-              <div className="font-light text-2xl text-black">
+              <div className="font-light md:text-2xl text-xl text-black">
                 The material on this site is incredibly deep and yet suprisingly
                 simple. It shares wisdom on how to approach the process of
                 change. Wisdom requires time and thought. Please give your self
@@ -89,33 +89,33 @@ function Landing() {
           </div>
           <div className="h-screen flex ">
             <div className="w-[60%] m-auto text-center space-y-8">
-              <div className="text-6xl font-semibold">
+              <div className="md:text-6xl text-4xl font-semibold">
                 1. The power of choosing
               </div>
             </div>
           </div>
           <div className="h-screen flex">
             <div className="w-[60%] m-auto text-center space-y-8">
-              <div className="text-6xl font-semibold">
+              <div className="md:text-6xl text-4xl font-semibold">
                 2. Perceptual Filters
               </div>
             </div>
           </div>
           <div className="h-screen flex">
             <div className="w-[60%] m-auto text-center space-y-8">
-              <div className="text-6xl font-semibold">3. I am not my story</div>
+              <div className="md:text-6xl text-4xl font-semibold">3. I am not my story</div>
             </div>
           </div>
           <div className="h-screen flex">
             <div className="w-[60%] m-auto text-center space-y-8">
-              <div className="text-6xl font-semibold">
+              <div className="md:text-6xl text-4xl font-semibold">
                 4. Change is the participation process
               </div>
             </div>
           </div>
           <div className="h-screen flex">
             <div className="w-[60%] m-auto text-center space-y-8">
-              <div className="text-6xl font-semibold">
+              <div className="md:text-6xl text-4xl font-semibold">
                 5. Freedom is accepting the consequences of our choices
               </div>
             </div>

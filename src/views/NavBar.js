@@ -1,12 +1,11 @@
-import { Outlet, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useHistory, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const NavBar = () => {
   const location = useLocation();
   const [hamBurgetState, setHamBurgetState] = useState(false);
-  const [aboutState, setAboutState] = useState(false);
   const [colorBgNav, setColorBgNav] = useState(false);
   const listenScrollEvent = (e) => {
     if (window.scrollY > 200) {
@@ -25,17 +24,20 @@ const NavBar = () => {
         className={`px-4 sm:px-8 py-4 fixed top-0 w-full z-50 font-Montserrat ${
           location.pathname === "/"
             ? colorBgNav
-              ? "bg-white text-black"
-              : "bg-transparent  text-white"
-            : "bg-white text-black"
-        }`}
+              ? hamBurgetState ? 'bg-transparent md:text-[#3E8FAA] text-black' : "bg-white md:text-[#3E8FAA] text-black"
+              : "bg-transparent  md:text-[#E6EFF3] text-black"
+            : hamBurgetState ? 'bg-transparent md:text-[#3E8FAA] text-black' : "bg-white md:text-[#3E8FAA] text-black"
+             }`}
         id="navbar"
       >
         <div className=" flex flex-wrap justify-between items-center mx-auto">
           <Link to="author" className="flex items-center">
-            <span className="md:text-5xl text-xl font-bold whitespace-nowrap text-black py-4 pr-4">
-              <span className=" p-2"> James O. </span> Henman
-            </span>
+            {!hamBurgetState && (
+              <span className={` ${location.pathname === "/" ? 'md:text-[#3E8FAA]' : ""} md:text-5xl text-xl font-bold whitespace-nowrap py-4 pr-4`}>
+                <span className=" p-2"> James O. </span> Henman
+              </span>
+            )}
+         
           </Link>
 
           <div class="hamburgerDiv">
@@ -71,11 +73,11 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
-              <li onClick={() => setAboutState(!aboutState)}>
+              {/* <li onClick={() => setAboutState(!aboutState)}>
                 <div className="relative py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 ">
-                  <span className="md:hover:text-[#2A4C9A] ">About</span>
-                  {aboutState && (
-                    <div className="absolute top-12 left-0 bg-black px-10 pb-2 space-y-2 rounded-lg">
+                  <span className="md:hover:text-[#2A4C9A]  ">About</span>
+                 {aboutState && (
+                    <div className="absolute top-12 left-0 bg-transparent px-10 py-2 space-y-2 rounded-lg !text-white">
                       <div>
                         <Link
                           to="author"
@@ -95,10 +97,25 @@ const NavBar = () => {
                         </Link>
                       </div>
                     </div>
-                  )}
+                  )} 
                 </div>
+              </li> */}
+              <li>
+                <Link
+                  to="author"
+                  className=" py-2 pr-4 pl-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2A4C9A] md:p-0 "
+                >
+                   Author
+                </Link>
               </li>
-
+              <li>
+                <Link
+                  to="book"
+                  className=" py-2 pr-4 pl-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2A4C9A] md:p-0 "
+                >
+                  Book
+                </Link>
+              </li>
               <li>
                 <Link
                   to="reviews"
@@ -130,13 +147,13 @@ const NavBar = () => {
       <AnimatePresence>
         {hamBurgetState && (
           <motion.div
-            className="h-screen bg-black w-[60%]  right-0 z-40 border-l-2 border-[#2A4C9A] fixed flex justify-center items-center"
+            className="h-screen bg-white  w-[60%]  right-0 z-40 fixed flex justify-center items-center"
             initial={{ opacity: 0, x: "100vw", scale: 0.1 }}
             animate={{ opacity: 1, x: "0px", scale: 1 }}
             exit={{ opacity: 0, x: "100vw", scale: 0.1 }}
             transition={{ duration: 0.5 }}
           >
-            <ul className="text-white space-y-4 text-xl font-Montserrat font-medium text-center pb-[82px]">
+            <ul className="text-black space-y-4 text-xl font-Montserrat font-medium text-center pb-[82px]">
               {" "}
               <li>
                 <Link
@@ -148,7 +165,7 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
-              <li onClick={() => setAboutState(!aboutState)}>
+              {/* <li onClick={() => setAboutState(!aboutState)}>
                 About
                 {aboutState && (
                   <div className=" space-y-2 ml-[80px] text-left border-l-4 border-[#2A4C9A] pl-2">
@@ -174,6 +191,24 @@ const NavBar = () => {
                     </div>
                   </div>
                 )}
+              </li> */}
+               <li>
+                <Link
+                  onClick={() => setHamBurgetState(!hamBurgetState)}
+                  to="author"
+                  className=" "
+                >
+                  Author
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => setHamBurgetState(!hamBurgetState)}
+                  to="book"
+                  className=" "
+                >
+                  Book
+                </Link>
               </li>
               <li>
                 <Link

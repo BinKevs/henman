@@ -3,10 +3,10 @@ import authorPaulPrettyPlease from "../assets/prettyPleaseWthAuthor-removeBg.png
 function Author() {
   return (
     <>
-      <div className="h-screen bg-white flex">
-        <div className="m-auto w-[80%] flex">
-          <div className=" my-auto text-justify mr-[32px]">
-            <span className="text-7xl font-semibold text-[#3D8FAA]">
+      <div className="md:h-screen bg-white flex md:mt-0 mt-[88px]">
+        <div className="m-auto w-[80%] flex md:flex-row flex-col">
+          <div className=" my-auto text-justify md:mr-[32px] md:order-first order-last">
+            <span className="md:text-7xl text-4xl font-semibold text-[#3D8FAA]">
               Dr.Henman{" "}
             </span>{" "}
             began his professional career working in Head Start and Migrant
@@ -28,7 +28,7 @@ function Author() {
             place to experience God's Grace in recovery
           </div>
           <img
-            className="h-[550px] w-[50%] object-cover object-top rounded-tl-[280px]"
+            className="h-[550px] md:w-[50%] object-cover object-top md:rounded-tl-[280px] rounded-tl-[180px]"
             src="https://s3-media0.fl.yelpcdn.com/bphoto/B14y2Hj7mOFSlvC-G_KaJw/348s.jpg"
             alt=""
           />
