@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/fischetti/static/css/main.0c3b4d57.css",
-    "main.js": "/fischetti/static/js/main.233dafe6.js",
+    "main.css": "/fischetti/static/css/main.93d897e2.css",
+    "main.js": "/fischetti/static/js/main.d77b7c24.js",
     "static/js/787.fa1be493.chunk.js": "/fischetti/static/js/787.fa1be493.chunk.js",
     "static/media/yellowSchoolBusToyModel.jpeg": "/fischetti/static/media/yellowSchoolBusToyModel.e91274d5b6d898731500.jpeg",
     "static/media/missPrettyPleaseWtStyle.jpg": "/fischetti/static/media/missPrettyPleaseWtStyle.6eefc3ff1ec7e969586c.jpg",
     "static/media/hotAugustWtStyle.jpeg": "/fischetti/static/media/hotAugustWtStyle.163c9794bb13ef8dbf02.jpeg",
-    "static/media/safetyWtGrass.jpeg": "/fischetti/static/media/safetyWtGrass.0c2ef605d7ab69c650e8.jpeg",
     "static/media/safetyWtStyle.jpeg": "/fischetti/static/media/safetyWtStyle.25328d3e5f75ec1bae4e.jpeg",
-    "static/media/prettyPleaseWtGrass.jpeg": "/fischetti/static/media/prettyPleaseWtGrass.82a5fba24e77c26266c8.jpeg",
     "static/media/prettyPleaseWthAuthor-removeBg.png": "/fischetti/static/media/prettyPleaseWthAuthor-removeBg.9b6965a8775ef6bf3719.png",
     "static/media/paulCollectionImages.jpg": "/fischetti/static/media/paulCollectionImages.018ebdd0908ed359f9c7.jpg",
-    "static/media/hotAugustBook.jpeg": "/fischetti/static/media/hotAugustBook.ce138fb0f3314c107c47.jpeg",
     "static/media/prettyPleaseBook.jpeg": "/fischetti/static/media/prettyPleaseBook.e1189f94ffc356b267d1.jpeg",
     "static/media/whoReallyDrivingYourBusBook.jpg": "/fischetti/static/media/whoReallyDrivingYourBusBook.463799673be81310987e.jpg",
     "static/media/StoneHengeLogoBlack.png": "/fischetti/static/media/StoneHengeLogoBlack.513af1dce2e0e81f4b74.png",
     "index.html": "/fischetti/index.html",
-    "main.0c3b4d57.css.map": "/fischetti/static/css/main.0c3b4d57.css.map",
-    "main.233dafe6.js.map": "/fischetti/static/js/main.233dafe6.js.map",
+    "main.93d897e2.css.map": "/fischetti/static/css/main.93d897e2.css.map",
+    "main.d77b7c24.js.map": "/fischetti/static/js/main.d77b7c24.js.map",
     "787.fa1be493.chunk.js.map": "/fischetti/static/js/787.fa1be493.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c3b4d57.css",
-    "static/js/main.233dafe6.js"
+    "static/css/main.93d897e2.css",
+    "static/js/main.d77b7c24.js"
   ]
 }
