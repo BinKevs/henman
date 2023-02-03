@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { AiOutlineRight } from "react-icons/ai";
 
-import whoReallyDrivingYourBusBook from "../assets/whoReallyDrivingYourBusBook.jpg";
+import dogThatCouldNotBarkFrontBlue from "../assets/dogThatCouldNotBarkFrontBlue.jpeg";
 import yellowSchoolBusToyModel from "../assets/yellowSchoolBusToyModel.jpeg";
 import prettyPleaseBook from "../assets/prettyPleaseBook.jpeg";
 import paulCollectionImages from "../assets/paulCollectionImages.jpg";
@@ -12,21 +12,40 @@ function Landing() {
     <>
       {/* https://t3.ftcdn.net/jpg/01/44/89/90/360_F_144899041_31mF1BTdxHWxD5n0MRjszvrGp05x430x.jpg */}
       <div
-        className={`landingDiv bg-[url(assets/yellowSchoolBusToyModel.jpeg)] bg-no-repeat bg-cover bg-left-bottom`}
+        className={`landingDiv backdrop-grayscale bg-[url('https://www.hdwallpapers.in/download/siberian_husky_on_yellow_leaves_in_blur_trees_forest_background_hd_dog-HD.jpg')] bg-no-repeat bg-cover bg-left-bottom`}
       >
+         {/* <div
+        className={`landingDiv backdrop-grayscale bg-[url(assets/siberianWtBlueFIlter.jpg)] bg-no-repeat bg-cover bg-left-bottom`}
+      > */}
         <div className="flex md:flex-row flex-col md:h-screen relative">
-          <div className="md:w-[60%] w-[80%] md:mx-0 mx-auto md:h-[100%] h-screen flex md:text-[#E6EFF3]">
-            <div className="m-auto w-[80%] space-y-8 ">
+          <div className="md:w-[60%] w-[80%] md:mx-0 mx-auto md:h-[100%] h-screen flex text-white ">
+            <div className="m-auto w-[80%] space-y-8 backdrop-blur-md">
               <div className="md:text-7xl text-4xl font-bold ">
-                James O. Henman
+              The Dog That Couldn't Bark
               </div>
-              <div className="text-2xl font-semibold ">
-                You can learn to recognize who is really driving your emotional
-                bus in the most difficult "traffic" areas of your life.
+              <div className="text-2xl font-semibold  w-[80%]">
+              "A family is introduced to a litter of puppies, but one special pup stands out from the rest―a cute little Alaskan Husky who turned this story into a mystery."
               </div>
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Dog-That-Couldnt-Bark-ebook/dp/B0BPJYXGXQ/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1675090646&sr=8-1"
+                class="inline-flex text-white bg-[#FF9900] border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg font-semibold"
+                rel="noreferrer"
+              >
+                Buy on Amazon
+              </a>
             </div>
           </div>
-          <div className="md:w-[40%] w-[80%] md:mx-0 mx-auto  h-[100%]">
+          <div className="md:w-[40%] w-[80%] flex h-screen">
+            <div className=" m-auto ">
+              <img
+                className="max-w-[75%] min-w-[120px]"
+                src={dogThatCouldNotBarkFrontBlue}
+                alt=""
+              />
+            </div>
+          </div>
+          {/* <div className="md:w-[40%] w-[80%] md:mx-0 mx-auto  h-[100%]">
             <div className="bg-[#FFFEFE] mx-auto md:w-[40%] w-[80%] h-[65%] md:absolute bottom-0 flex justify-center text-black">
               <div className="my-auto">
                 <div className="flex lg:flex-row flex-col justify-center">
@@ -60,7 +79,7 @@ function Landing() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="h-full bg-gradient-to-b from-[#FFFEFE] to-[#3D8FAA] flex text-white">

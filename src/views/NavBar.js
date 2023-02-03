@@ -21,20 +21,14 @@ const NavBar = () => {
     <>
       {" "}
       <nav
-        className={`px-4 sm:px-8 py-4 fixed top-0 w-full z-50 font-Montserrat ${
-          location.pathname === "/"
-            ? colorBgNav
-              ? hamBurgetState ? 'bg-transparent md:text-[#3E8FAA] text-black' : "bg-white md:text-[#3E8FAA] text-black"
-              : "bg-transparent  md:text-[#E6EFF3] text-black"
-            : hamBurgetState ? 'bg-transparent md:text-[#3E8FAA] text-black' : "bg-white md:text-[#3E8FAA] text-black"
-             }`}
+        className={`px-4 sm:px-8 py-4 fixed top-0 w-full z-50 bg-white text-black`}
         id="navbar"
       >
         <div className=" flex flex-wrap justify-between items-center mx-auto">
           <Link to="author" className="flex items-center">
             {!hamBurgetState && (
-              <span className={` ${location.pathname === "/" ? 'md:text-[#3E8FAA]' : ""} md:text-5xl text-xl font-bold whitespace-nowrap py-4 pr-4`}>
-                <span className=" p-2"> James O. </span> Henman
+              <span className={`font-RobotoSlab md:text-5xl text-xl font-bold whitespace-nowrap py-4 pr-4`}>
+               Jeralynne  Linder
               </span>
             )}
          
